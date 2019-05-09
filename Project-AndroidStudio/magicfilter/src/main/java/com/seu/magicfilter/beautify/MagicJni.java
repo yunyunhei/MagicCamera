@@ -1,7 +1,6 @@
 package com.seu.magicfilter.beautify;
 
 import android.graphics.Bitmap;
-import android.util.Log;
 
 import java.nio.ByteBuffer;
 
@@ -10,7 +9,7 @@ import java.nio.ByteBuffer;
  */
 public class MagicJni {
     static{
-        System.loadLibrary("MagicBeautify");
+        System.loadLibrary("native-lib");
     }
 
     public static native void jniInitMagicBeautify(ByteBuffer handler);
