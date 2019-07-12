@@ -106,7 +106,7 @@ public class MagicCameraView extends MagicBaseView {
                     videoEncoder.setCubeBuffer(gLCubeBuffer);
                     videoEncoder.startRecording(new TextureMovieEncoder.EncoderConfig(
                             outputFile, info.previewWidth, info.pictureHeight,
-                            1000000, EGL14.eglGetCurrentContext(),
+                            (int) (1024 * 1024 * 10.1D), EGL14.eglGetCurrentContext(),
                             info));
                     recordingStatus = RECORDING_ON;
                     break;
